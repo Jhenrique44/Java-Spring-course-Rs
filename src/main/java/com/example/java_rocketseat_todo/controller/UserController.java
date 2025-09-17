@@ -14,6 +14,11 @@ public class UserController {
 
     @PostMapping("/")
     public void createUser(@RequestBody User user) {
-        System.out.println("User created: " + user.name + ", " + user.email);
+        System.out.println("User created: " + user.getName() + ", " + user.getEmail());
+    }
+
+    @GetMapping("/")
+    public void getUsers(){
+        System.out.println("List of users");
     }
 }
