@@ -19,7 +19,7 @@ public class Task {
     @GeneratedValue(generator = "UUID")
     private UUID id;
 
-    private User user;
+    private UUID userId;
     
     @Column(length = 50, nullable = false, unique = true)
     private String title;
